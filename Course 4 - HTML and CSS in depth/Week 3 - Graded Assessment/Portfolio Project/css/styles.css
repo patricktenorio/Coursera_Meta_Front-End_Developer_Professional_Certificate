@@ -1,0 +1,163 @@
+:root {
+    /* My Color Pallete */
+    --first-color: #233142;
+    --second-color: #455d7a; 
+    --third-color: #f95959;
+    --fourth-color: #e3e3e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', serif;
+}
+
+body {
+    background-color: var(--first-color);
+}
+
+/*---------- Banner Section ----------*/
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #233142;
+}
+/*------------------------------------*/
+
+
+/*---------- Navbar Section ----------*/
+.navbar {
+    background-color: var(--second-color);
+}
+
+nav ul {
+    font-size: 16px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0.2rem 0 0.2rem 2.5rem;
+}
+
+nav ul a {
+    color: var(--fourth-color);
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: var(--third-color);
+
+}
+/*------------------------------------*/
+
+
+/*---------- Banner Section ----------*/
+.sale-banner {
+    display: flex;
+}
+
+/*-- Image --*/
+.banner {
+    background-image: url("/assets/background.png");
+    background-size: cover;
+    background-position: right;
+    color: var(--fourth-color);
+    text-align: right;
+    width: 100%;
+    height: 50rem;
+}
+
+/*-- Heading --*/
+.banner h1 {
+    text-align: left;
+    font-size: 10rem;
+    color: var(--fourth-color);
+    text-shadow: 8px 2px 15px var(--third-color);
+    padding: 0 0 0 1.5rem;
+    margin: 4rem 0 0 0;
+}
+
+/*-- Pharagraph --*/
+.banner p {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--fourth-color);
+    padding: 0 0 0 1.9rem;
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+
+p span {
+    background-color: rgb(249, 89, 89, 0.3);
+    padding: 2px;
+}
+/*------------------------------------*/
+
+
+/*---------- Items Section ----------*/
+.items {
+    display: flex;
+    background-color: var(--fourth-color);
+}
+
+main article {
+    background-color:  var(--fourth-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+article h2 {
+    text-align: center;
+    color: var(--first-color);
+    padding-bottom: 0.5rem;
+}
+
+article p {
+    color: var(--first-color);
+}
+
+.items article {
+    border-style: double;
+    border-color: var(--third-color);
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    margin:1rem;
+    flex: 1;
+}
+
+article a:link {
+    font-size: 1.3rem;
+    color: var(--first-color);
+    text-decoration: none;
+}
+
+article a:hover {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+/*------------------------------------*/
+
+
+/*---------- Footer Section ----------*/
+footer {
+    display: flex;
+    margin: 0 2rem 0 2rem;
+    padding: 10px
+}
+footer div {
+    flex: 1;
+}
+footer p {
+    text-align: right;
+    padding-top: 5px;
+    color: var(--fourth-color)
+}
